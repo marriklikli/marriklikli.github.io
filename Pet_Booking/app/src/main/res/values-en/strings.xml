@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pet_Booking</string>
+    <string name="background_text_one">Here you can find someone who will happily look after your pet, while you are away</string>
+    <string name="background_text_two">Set up search filter the way you need and find a sitter who is ideal match for you and your pet</string>
+    <string name="background_text_three">Contract your sitter anytime and get updates on your pet in chat and stories feed</string>
+    <string name="background_text_thour">Sign up  and make a pet card to start looking for an ideal sitter</string>
+    <string name="text_one">Convenient search</string>
+    <string name="text_second">Always available</string>
+    <string name="text_three">Welcome</string>
+    <string name="next_button">Continue</string>
+    <string name="map_button">Map</string>
+    <string name="list_button">List</string>
+    <string name="sitter">Sitters near you</string>
+    <string name="date">Dates</string>
+    <string name="pet">Pet</string>
+    <string name="search_button">Search</string>
+    <string name="orders_button">My orders</string>
+    <string name="chat_button">Chat</string>
+    <string name="profile_button">Profile</string>
+    <string name="about_button">About</string>
+    <string name="reviews_button">Reviews</string>
+
+
+</resources>

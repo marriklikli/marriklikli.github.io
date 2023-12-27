@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodily"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/type_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тип дома няни"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/type_house_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Апартаменты"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_house"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/other_pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Другие животные дома"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_house_answer" />
+
+    <TextView
+        android:id="@+id/other_pet_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Нет"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_pet" />
+
+    <TextView
+        android:id="@+id/can_care"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Может заботится об:"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_pet_answer" />
+
+    <TextView
+        android:id="@+id/can_care_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Собаки, коты, птицы"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/can_care" />
+
+    <TextView
+        android:id="@+id/pet_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Размер животного"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/can_care_answer" />
+
+    <TextView
+        android:id="@+id/pet_size_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="До 10 кг"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_size" />
+
+    <TextView
+        android:id="@+id/skills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Навыки и опыт"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_size_answer" />
+
+    <ImageView
+        android:id="@+id/skills_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@android:drawable/ic_menu_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skills" />
+
+    <TextView
+        android:id="@+id/skills_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забота о собаках до 9 лет"
+        app:layout_constraintStart_toEndOf="@+id/skills_image"
+        app:layout_constraintTop_toBottomOf="@+id/skills"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:id="@+id/skills_image_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@android:drawable/ic_menu_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skills_image" />
+
+    <TextView
+        android:id="@+id/skills_text_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тренировка животных"
+        app:layout_constraintStart_toEndOf="@+id/skills_image_two"
+        app:layout_constraintTop_toBottomOf="@+id/skills_image"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:id="@+id/skills_image_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@android:drawable/ic_menu_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skills_image_two" />
+
+    <TextView
+        android:id="@+id/skills_text_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Может делать инъекции"
+        app:layout_constraintStart_toEndOf="@+id/skills_image_three"
+        app:layout_constraintTop_toBottomOf="@+id/skills_image_two"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:id="@+id/skills_image_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@android:drawable/ic_menu_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skills_image_three" />
+
+    <TextView
+        android:id="@+id/skills_text_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забота о собаках до 9 лет"
+        app:layout_constraintStart_toEndOf="@+id/skills_image_three"
+        app:layout_constraintTop_toBottomOf="@+id/skills_image_three"
+        android:layout_margin="5dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

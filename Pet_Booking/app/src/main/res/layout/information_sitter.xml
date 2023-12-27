@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodily">
+
+    <ImageView
+        android:id="@+id/photo_all"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:src="@drawable/kakasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Какаши Хатаке"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo_all" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Большой город, 23км от вас"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_all" />
+
+    <TextView
+        android:id="@+id/verified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Проверен"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <ImageView
+        android:id="@+id/okay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verified" />
+
+    <TextView
+        android:id="@+id/orders_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="175 контрактов"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toEndOf="@+id/okay"
+        app:layout_constraintTop_toBottomOf="@+id/verified" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"
+        android:src="@android:drawable/btn_star"
+        app:layout_constraintStart_toEndOf="@+id/orders_all"
+        app:layout_constraintTop_toBottomOf="@+id/verified" />
+
+    <TextView
+        android:id="@+id/all_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5(100)"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toEndOf="@+id/star"
+        app:layout_constraintTop_toBottomOf="@+id/verified" />
+
+    <TextView
+        android:id="@+id/all_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="$10/день"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okay" />
+
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:text="@string/about_button"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_day" />
+
+    <Button
+        android:id="@+id/reviews_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/reviews_button"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_day" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обо мне"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_button"
+        android:textSize="20sp"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Имею опыт дрессировки собак, также играл в Watch Dogs. Могу сделать сальто назад. Выполнил миссию игрушечного вертолета в Вайс-Сити с первой попытки, изобрел смартфоны. У меня есть титул чемпиона по шахматам в уличных боях, а также я самый первый победитель Олимпийских игр"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="Узнать больше"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

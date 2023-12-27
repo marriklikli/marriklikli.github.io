@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodily"
+    tools:context=".ChatActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navmenu"/>
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Чат"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Истории отчеты"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat" />
+
+    <ImageView
+        android:id="@+id/photo_stories"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/kakasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stories" />
+
+    <TextView
+        android:id="@+id/name_stories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Какаши Х."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo_stories"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/chats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Чаты"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_stories"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/red"/>
+
+    <ImageView
+        android:id="@+id/chats_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kakasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chats"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/chats_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Какаши Х."
+        app:layout_constraintStart_toEndOf="@+id/chats_photo"
+        app:layout_constraintTop_toBottomOf="@+id/chats" />
+
+    <TextView
+        android:id="@+id/chats_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="С Морти все хорошо! Скучает..."
+        app:layout_constraintStart_toEndOf="@+id/chats_photo"
+        app:layout_constraintTop_toBottomOf="@+id/chats_name"
+        android:layout_margin="5dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

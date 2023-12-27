@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pet_Booking</string>
+    <string name="background_text_one">Здесь вы можете найти кого-то, кто с радостью присмотрит за вашим питомцем, пока вас не будет дома</string>
+    <string name="background_text_two">Настройте поисковый фильтр так, как вам нужно, и найдите няню, которая идеально подойдет вам и вашему питомцу</string>
+    <string name="background_text_three">Заключайте контракт с няней в любое время и получайте обновления о своем питомце в чате и ленте историй</string>
+    <string name="background_text_thour">Зарегистрируйтесь и заведите карточку домашнего животного, чтобы начать поиск идеальной няни</string>
+    <string name="text_one">Удобный поиск</string>
+    <string name="text_second">Всегда в наличии</string>
+    <string name="text_three">Добро пожаловать</string>
+    <string name="next_button">Продолжить</string>
+    <string name="map_button">Карта</string>
+    <string name="list_button">Список</string>
+    <string name="sitter">Няни рядом с вами</string>
+    <string name="date">Даты</string>
+    <string name="pet">Животное</string>
+    <string name="search_button">Поиск</string>
+    <string name="orders_button">Мои контракты</string>
+    <string name="chat_button">Чат</string>
+    <string name="profile_button">Профиль</string>
+    <string name="about_button">Обо мне</string>
+    <string name="reviews_button">Отзывы</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
